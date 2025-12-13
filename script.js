@@ -51,13 +51,18 @@ let displayElement = document.querySelector(".screen")
 let getbtn = document.querySelectorAll(".nums")
 let displayvalue = ""
 
+displayElement.textContent = 0
+
 /*function to know wich number was pressed and to add it*/
 getbtn.forEach(button=>{
     button.addEventListener("click",()=>{
         if (isResultDisplayed){
             displayvalue = button.textContent
             isResultDisplayed = false
-        }else{
+        }else if (displayvalue === 0){
+            displayvalue = button.textContent
+        }
+        else{
             displayvalue += button.textContent
         }
         displayElement.textContent = displayvalue

@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: Arial, sans-serif;
+}
+
+.calc{
+    background: #2d2d2d;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.screen{
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 20px;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+.operators{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom : 10px;
+}
+
+.operator{
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 0;
+}
+
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.numbers button {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 0;
+}
+
+.others{
+    display: flex;
+    gap: 10px;
+}
+
+.others button {
+    flex: 1;
+}
+
+button{
+    background: #4a4a4a;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.operator{
+    background: #ffaa33;
+}
+
+.fl{
+    background: #ff9500;
+}
+
+.equal{
+    background: #4caf50;
+}
+
+.cl{
+    background: #f44336;
+}
+
+.ret{
+    background: #2196f3;
+}
